@@ -1,0 +1,32 @@
+/* sort-choicebox.css */
+
+#sort {
+    -fx-background-radius: 10;
+    -fx-background-color: linear-gradient(to bottom, #4aa3af, #3c7d88);
+    -fx-border-radius: 10;
+    -fx-border-color: #2c5a64;
+    -fx-border-width: 1.5;
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: semi-bold;
+}
+
+#sort .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: semi-bold;
+}
+
+#sort .arrow {
+    -fx-background-color: white;
+}
+
+#sort:hover {
+    -fx-background-color: linear-gradient(to bottom, #56b0bc, #438b97);
+}
+
+#sort:focused {
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2;
+}

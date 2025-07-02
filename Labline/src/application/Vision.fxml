@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/23.0.1"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="application.v_m_reportController">
+
+    <!-- Dim Layer -->
+    <AnchorPane fx:id="dimLayer" visible="false"
+                style="-fx-background-color: rgba(0, 0, 0, 0.4);" 
+                StackPane.alignment="CENTER" />
+
+    <!-- Main Content -->
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                prefHeight="420.0" prefWidth="771.0"
+                style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #006f72; -fx-border-width: 2;">
+
+        <children>
+            <Text fill="#006f72" layoutX="37.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Labline Enterprises Inc seeks to set the highest standard in providing premium quality diagnostic machine and supplies through fast and reliable after sales services. To lead and distribute through excellence and be exemplary in the fleld of Veterinary Diagnostic."
+                  textAlignment="CENTER" wrappingWidth="696.536376953125">
+                <font>
+                    <Font name="Century Gothic Bold" size="24.0" />
+                </font>
+            </Text>
+
+            <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1463.0" layoutY="16.0"
+                       onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@pics/cross.png" />
+                </image>
+            </ImageView>
+
+            <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1436.0" layoutY="16.0"
+                       onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@pics/compress-alt%20.png" />
+                </image>
+            </ImageView>
+
+            <Pane prefHeight="56.0" prefWidth="771.0"
+                  style="-fx-background-color: cde9ea; -fx-background-radius: 30 30 0 0; -fx-border-color: #006f72; -fx-border-radius: 30 30 0 0; -fx-border-width: 2;">
+                <children>
+                    <Label layoutX="331.0" layoutY="7.0" text="VISION" textAlignment="CENTER" textFill="#006f72">
+                        <font>
+                            <Font name="Century Gothic Bold" size="36.0" />
+                        </font>
+                    </Label>
+
+                    <Circle fill="#ff9b9e" layoutX="37.0" layoutY="28.0" radius="16.0" stroke="#006f72" strokeType="INSIDE" />
+
+                    <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="721.0" layoutY="14.0"
+                               onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@pics/cross%20(2).png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </Pane>
+        </children>
+    </AnchorPane>
+</StackPane>

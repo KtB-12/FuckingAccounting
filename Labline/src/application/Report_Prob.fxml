@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.resetpass_controller">
+   <children>
+      <ImageView fitHeight="866.0" fitWidth="1537.0" layoutY="-1.0" onMouseClicked="#btlg1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/Copy%20of%20System%20GUI.gif" />
+         </image></ImageView>
+      <Pane layoutX="366.0" layoutY="-18.0" prefHeight="865.0" prefWidth="797.0">
+         <children>
+            <Rectangle arcHeight="18.0" arcWidth="18.0" fill="#459da6" height="49.0" layoutX="188.0" layoutY="141.0" stroke="#fffcfc" strokeType="INSIDE" width="450.0" />
+            <TextField fx:id="name" layoutX="180.0" layoutY="130.0" prefHeight="49.0" prefWidth="450.0" promptText="Enter your Name" style="-fx-background-radius: 12; -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="219.0" layoutY="24.0" prefHeight="76.0" prefWidth="403.0" text="Send us a Message" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="182.0" layoutY="90.0" prefHeight="40.0" prefWidth="208.0" text="Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="18.0" arcWidth="18.0" fill="#459da6" height="49.0" layoutX="188.0" layoutY="240.0" stroke="#fffcfc" strokeType="INSIDE" width="450.0" />
+            <TextField fx:id="email" layoutX="181.0" layoutY="230.0" prefHeight="49.0" prefWidth="450.0" promptText="Enter your Email Address" style="-fx-background-radius: 12; -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="183.0" layoutY="190.0" prefHeight="40.0" prefWidth="208.0" text="Email Address" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="18.0" arcWidth="18.0" fill="#459da6" height="49.0" layoutX="191.0" layoutY="339.0" stroke="#fffcfc" strokeType="INSIDE" width="450.0" />
+            <TextField fx:id="number" layoutX="184.0" layoutY="329.0" prefHeight="49.0" prefWidth="450.0" promptText="Enter your Phone Number" style="-fx-background-radius: 12; -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="186.0" layoutY="289.0" prefHeight="40.0" prefWidth="298.0" text="Phone Number(Optional)" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="18.0" arcWidth="18.0" fill="#459da6" height="49.0" layoutX="191.0" layoutY="438.0" stroke="#fffcfc" strokeType="INSIDE" width="450.0" />
+            <TextField fx:id="sub" layoutX="184.0" layoutY="428.0" prefHeight="49.0" prefWidth="450.0" promptText="Report a Problem" style="-fx-background-radius: 12; -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="186.0" layoutY="388.0" prefHeight="40.0" prefWidth="234.0" text="Subject" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="18.0" arcWidth="18.0" fill="#459da6" height="85.0" layoutX="192.0" layoutY="537.0" stroke="#fffcfc" strokeType="INSIDE" width="450.0" />
+            <TextField fx:id="message" layoutX="185.0" layoutY="527.0" prefHeight="85.0" prefWidth="450.0" promptText="Enter a message" style="-fx-background-radius: 12; -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="187.0" layoutY="487.0" prefHeight="40.0" prefWidth="234.0" text="Message" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="183.0" layoutY="646.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="173.0" style="-fx-background-color: #459da6; -fx-background-radius: 13;" text="Send Message" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="305.0" layoutY="705.0" prefHeight="40.0" prefWidth="202.0" text="Contact Information" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="364.0" layoutY="736.0" prefHeight="19.0" prefWidth="99.0" text="09563481573" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="335.0" layoutY="732.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/contact_.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="341.0" layoutY="754.0" prefHeight="19.0" prefWidth="245.0" text="bastaemail@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="311.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/email.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="230.0" layoutY="772.0" prefHeight="19.0" prefWidth="497.0" text="Available every Sat 12 AM onlyAvailable every Sat 12 AM only" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="200.0" layoutY="768.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/date.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="457.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#btlg1" prefHeight="49.0" prefWidth="173.0" style="-fx-background-color: white; -fx-background-radius: 13;" text="Back to Log In" textFill="#459da6">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1463.0" layoutY="16.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1427.0" layoutY="16.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/compress-alt%20.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

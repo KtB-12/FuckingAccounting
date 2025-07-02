@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.resetpass_controller">
+   <children>
+      <ImageView fitHeight="915.0" fitWidth="1586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/bg.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="60.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="500.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/LEFT%20BLUE.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="276.0" fitWidth="488.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/RIGHT%20BLUE.png" />
+               </image>
+            </ImageView>
+            <Text fill="#a6a6a6" layoutX="242.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" wrappingWidth="16.91587257385254" y="8.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <ImageView fitHeight="146.0" fitWidth="175.0" layoutX="56.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true" y="2.0">
+               <image>
+                  <Image url="@pics/orr.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="48.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESET PASSWORD" textAlignment="CENTER" wrappingWidth="404.39996337890625">
+               <font>
+                  <Font name="Century Gothic Bold" size="41.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.4166666802131769" startY="0.0075757142269250455">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.08235294371843338" green="0.6235294342041016" blue="0.6352941393852234" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9973082099596231">
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.08235294371843338" green="0.6235294342041016" blue="0.6352941393852234" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="66.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Password">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="1.0" blue="0.9666666388511658" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.08235294371843338" green="0.6235294342041016" blue="0.6352941393852234" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="265.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password">
+               <fill>
+                  <LinearGradient startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="1.0" blue="0.9666666388511658" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9973082099596231">
+                           <color>
+                              <Color green="1.0" blue="0.8448392152786255" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.6736842393875122" blue="0.5501754283905029" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="56.0" layoutY="427.0" mnemonicParsing="false" onMouseClicked="#reset" prefHeight="53.0" prefWidth="388.0" style="-fx-background-color: b64b4a; -fx-background-radius: 25;" text="Reset Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Pane layoutX="56.0" layoutY="223.0" prefHeight="53.0" prefWidth="388.0" style="-fx-background-color: cde9ea; -fx-background-radius: 30;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="31.0" layoutX="12.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" x="-5.0">
+                     <image>
+                        <Image url="@pics/birthday%20icon.png" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="bday" layoutX="38.0" layoutY="2.0" prefHeight="49.0" prefWidth="329.0" promptText="Birthday" stylesheets="@css_styles/datestyle2.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="56.0" layoutY="148.0" prefHeight="53.0" prefWidth="388.0" style="-fx-background-color: #cde9ea; -fx-background-radius: 25;">
+               <children>
+                  <TextField fx:id="username" layoutX="37.0" layoutY="1.0" prefHeight="49.0" prefWidth="337.0" promptText="Username" style="-fx-background-color: #cde9ea; -fx-background-radius: 25;" />
+                  <ImageView fitHeight="40.0" fitWidth="31.0" layoutX="12.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" x="-3.0">
+                     <image>
+                        <Image url="@pics/username%20icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="59.0" layoutY="324.0" prefHeight="53.0" prefWidth="175.0" style="-fx-background-color: cde9ea; -fx-background-radius: 30;">
+               <children>
+                  <PasswordField fx:id="newpass" layoutX="14.0" layoutY="7.0" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: cdea9ea; -fx-background-radius: 25;" />
+               </children>
+            </Pane>
+            <Pane layoutX="267.0" layoutY="324.0" prefHeight="53.0" prefWidth="175.0" style="-fx-background-color: cde9ea; -fx-background-radius: 30;">
+               <children>
+                  <PasswordField fx:id="np21" layoutX="20.0" layoutY="7.0" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: cdea9ea; -fx-background-radius: 30;" />
+                  <PasswordField fx:id="confirmnewpass" layoutX="15.0" layoutY="7.0" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: cdea9ea; -fx-background-radius: 25;" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="146.0" fitWidth="175.0" layoutX="273.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true" y="2.0">
+               <image>
+                  <Image url="@pics/orr.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="56.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#btlg1" prefHeight="53.0" prefWidth="388.0" style="-fx-background-color: #159fa2; -fx-background-radius: 25;" text="Back to log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="56.0" layoutY="597.0" mnemonicParsing="false" onMouseClicked="#Su1" prefHeight="53.0" prefWidth="388.0" style="-fx-background-color: e2e2e2; -fx-background-radius: 25;" text="Sign up" translateY="5.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1463.0" layoutY="16.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1436.0" layoutY="16.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/compress-alt%20.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="1200.0" layoutY="628.0" opacity="0.75" prefHeight="40.0" prefWidth="246.0" style="-fx-background-color: #008285; -fx-background-radius: 45;">
+         <children>
+            <Label layoutX="20.0" layoutY="5.0" prefHeight="31.0" prefWidth="192.0" text="(+63) 917-519-8758" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="197.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/phone-call.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="1097.0" layoutY="674.0" opacity="0.75" prefHeight="40.0" prefWidth="349.0" style="-fx-background-color: #008285; -fx-background-radius: 45;">
+         <children>
+            <Label layoutX="20.0" layoutY="5.0" prefHeight="31.0" prefWidth="275.0" text="lablineenterprises@yahoo.com" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="304.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/yahoo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="1030.0" layoutY="720.0" opacity="0.75" prefHeight="40.0" prefWidth="416.0" style="-fx-background-color: #008285; -fx-background-radius: 45;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="371.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/facebook.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="20.0" layoutY="5.0" prefHeight="31.0" prefWidth="349.0" text="www.facebook.com/lablineenterprises" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Text accessibleRole="BUTTON" fill="#fffbfb" layoutX="980.0" layoutY="70.0" onMouseEntered="#vision" strokeType="OUTSIDE" strokeWidth="0.0" text="Vision" wrappingWidth="107.59114074707031">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text accessibleRole="BUTTON" fill="#fffbfb" layoutX="1313.0" layoutY="70.0" onMouseEntered="#mission" strokeType="OUTSIDE" strokeWidth="0.0" text="Mission" wrappingWidth="125.0">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="568.0" style="-fx-background-color: cde9ea; -fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.newProductController">
+   <children>
+      <Label layoutX="154.0" layoutY="15.0" prefHeight="62.0" prefWidth="258.0" text="Add Product" textAlignment="CENTER" textFill="#1e8bab">
+         <font>
+            <Font name="Century Gothic Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="addToListButton" layoutX="356.0" layoutY="287.0" mnemonicParsing="false" onMouseClicked="#handleAddToList" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #1e8bab;" text="+ Add to List" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Pane layoutX="70.0" layoutY="185.0" prefHeight="40.0" prefWidth="427.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="priceField" layoutX="136.0" layoutY="2.0" prefHeight="36.0" prefWidth="278.0" promptText="Enter the Price" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Century Gothic Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="70.0" layoutY="135.0" prefHeight="40.0" prefWidth="427.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name:">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="productNameField" layoutX="136.0" layoutY="2.0" prefHeight="36.0" prefWidth="278.0" promptText="Enter Product List" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Century Gothic Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="70.0" layoutY="83.0" prefHeight="40.0" prefWidth="427.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Code:">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="productCodeField" layoutX="136.0" layoutY="2.0" prefHeight="36.0" prefWidth="278.0" promptText="Enter Product Code" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Century Gothic Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="524.0" layoutY="9.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="500.0" layoutY="9.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/compress-alt%20.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="69.0" layoutY="234.0" prefHeight="40.0" prefWidth="427.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="category" layoutX="136.0" layoutY="2.0" prefHeight="36.0" prefWidth="278.0" promptText="Choose the category" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

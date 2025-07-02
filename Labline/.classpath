@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-24">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/javax.mail-1.6.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/activation-1.1.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/openjfx-24.0.1_windows-x64_bin-sdk/javafx-sdk-24.0.1/lib/javafx.graphics.jar" sourcepath="C:/Users/raffb/Downloads/openjfx-24.0.1_windows-x64_bin-sdk/javafx-sdk-24.0.1/lib/src.zip">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/*"/>
+			<accessrule kind="discouraged" pattern="com/sun/*"/>
+			<accessrule kind="discouraged" pattern="netscape/javascript/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/postgresql-42.7.6.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/openjfx-24.0.1_windows-x64_bin-sdk/javafx-sdk-24.0.1/lib/javafx.fxml.jar" sourcepath="C:/Users/raffb/Downloads/openjfx-24.0.1_windows-x64_bin-sdk/javafx-sdk-24.0.1/lib/src.zip">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/*"/>
+			<accessrule kind="discouraged" pattern="com/sun/*"/>
+			<accessrule kind="discouraged" pattern="netscape/javascript/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/barcodes-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/font-asian-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/forms-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/hyph-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/io-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/kernel-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/layout-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/pdfa-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/pdftest-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/sign-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/styled-xml-parser-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/iText7-Core-7.1.9-only-jars/svg-7.1.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raffb/Downloads/slf4j-api-1.7.36.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

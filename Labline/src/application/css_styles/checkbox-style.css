@@ -1,0 +1,30 @@
+.check-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #1e8bab;
+    -fx-border-radius: 8;
+    -fx-padding: 8 12 8 12;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 13px;
+    -fx-text-fill: #333;
+}
+
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: #1e8bab;
+    -fx-border-width: 2;
+    -fx-border-radius: 4;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+    -fx-alignment: center;
+    -fx-padding: 4;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #1e8bab;
+    -fx-border-color: #1e8bab;
+}
+
+.check-box .text {
+    -fx-alignment: center;
+}

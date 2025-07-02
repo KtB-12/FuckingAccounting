@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DeliveryReceiptsController_Arch">
+   <children>
+      <ImageView fitHeight="844.0" fitWidth="1570.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/Copy%20of%20System%20GUI.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-6.0" prefHeight="56.0" prefWidth="1500.0" style="-fx-background-color: cde9ea;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="242.0" layoutX="674.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Labline%20logo.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="68.0" layoutY="14.0" prefHeight="35.0" prefWidth="364.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="337.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/cross%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="29.0" layoutY="5.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: white;" />
+               </children>
+            </Pane>
+            <Pane layoutX="444.0" layoutY="14.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #47919f; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="edit" accessibleRole="BUTTON" fitHeight="25.0" fitWidth="27.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/edit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="489.0" layoutY="14.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #47919f; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="delete" accessibleRole="BUTTON" fitHeight="35.0" fitWidth="27.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/trash.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="534.0" layoutY="14.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #47919f; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="List" accessibleRole="BUTTON" fitHeight="35.0" fitWidth="27.0" layoutX="4.0" layoutY="4.0" onMouseClicked="#list" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/ballot.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <TableView fx:id="deltable" layoutX="301.0" layoutY="131.0" prefHeight="662.0" prefWidth="1152.0" style="-fx-background-color: ffffff;">
+         <columns>
+            <TableColumn prefWidth="75.0" style="-fx-background-color: cde9ea;" text="DR Number" />
+            <TableColumn prefWidth="92.79995727539062" style="-fx-background-color: cde9ea;" text="Date" />
+            <TableColumn prefWidth="146.40005493164062" style="-fx-background-color: cde9ea;" text="Registered Name" />
+            <TableColumn prefWidth="192.800048828125" style="-fx-background-color: cde9ea;" text="Address" />
+            <TableColumn minWidth="0.0" prefWidth="104.0" style="-fx-background-color: cde9ea;" text="Terms" />
+            <TableColumn prefWidth="45.5999755859375" style="-fx-background-color: cde9ea;" text="Qty." />
+            <TableColumn prefWidth="260.800048828125" style="-fx-background-color: cde9ea;" text="Item Description" />
+            <TableColumn prefWidth="119.99993896484375" style="-fx-background-color: cde9ea;" text="Unit Price" />
+            <TableColumn prefWidth="110.39990234375" style="-fx-background-color: cde9ea;" text="Total Amount" />
+         </columns>
+      </TableView>
+      <ChoiceBox layoutX="1284.0" layoutY="69.0" prefHeight="35.0" prefWidth="158.0" style="-fx-background-radius: 10; -fx-background-color: #47919f;" />
+      <Text fx:id="delsign" fill="#b82b2a" layoutX="702.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Cancelled DR">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1463.0" layoutY="16.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1436.0" layoutY="16.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/compress-alt%20.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="sidebar" layoutY="50.0" prefHeight="774.0" prefWidth="260.0" style="-fx-background-color: #47919f;">
+         <children>
+            <ImageView fx:id="minbutton" accessibleRole="BUTTON" fitHeight="56.0" fitWidth="68.0" layoutX="196.0" layoutY="5.0" onMouseClicked="#min" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/exit%20side%20bar%20button%20.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="maximizebutton" accessibleRole="BUTTON" fitHeight="93.0" fitWidth="99.0" layoutX="-16.0" layoutY="-14.0" onMouseClicked="#max" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/maximize%20side%20bar%20icon.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="homepane" layoutX="31.0" layoutY="344.0" prefHeight="62.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 60 0 0 60;">
+               <children>
+                  <Button fx:id="deliversign" layoutX="62.0" layoutY="3.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: white;" text="Delivery" textFill="#b64b4a">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="deliviericon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="11.0" layoutY="10.0" onMouseClicked="#homeic" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+                     <image>
+                        <Image url="@pics/b%20delivery_.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="prosign" layoutX="93.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#prod" prefHeight="54.0" prefWidth="158.0" style="-fx-background-color: #47919f;" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="prodicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="263.0" onMouseClicked="#prod" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20products.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="collectionsign" layoutX="95.0" layoutY="441.0" mnemonicParsing="false" onMouseClicked="#col" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Collection  " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="colloectionicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="441.0" onMouseClicked="#col" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20collection%20.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="summarixsign" layoutX="95.0" layoutY="528.0" mnemonicParsing="false" onMouseClicked="#sum" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Summarix" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="summarixicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="534.0" onMouseClicked="#sum" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20summarix.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logsign" layoutX="95.0" layoutY="692.0" mnemonicParsing="false" onMouseClicked="#out" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="settingsicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="616.0" onMouseClicked="#openMyAccount" pickOnBounds="true" preserveRatio="true" x="7.0">
+               <image>
+                  <Image url="@pics/w%20user-gear.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logicon1" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="698.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="settingsb1" layoutX="95.0" layoutY="610.0" mnemonicParsing="false" onMouseClicked="#openMyAccount" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="homesign" layoutX="95.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#homesi" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="HomePage" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="homeicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="74.0" onMouseClicked="#homeic" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20home%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accbutton" layoutX="95.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#account1" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Accounts" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="accicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="169.0" onMouseClicked="#account1" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20folder-minus.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

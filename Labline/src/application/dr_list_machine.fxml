@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="312.0" prefWidth="422.0" style="-fx-background-color: white; -fx-border-radius: 30; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dr_list_machine">
+   <children>
+      <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="15.0" layoutX="402.0" layoutY="11.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cross.png" />
+         </image></ImageView>
+      <TableView fx:id="tableView" layoutY="32.0" prefHeight="258.0" prefWidth="424.0" style="-fx-border-color: black;">
+        <columns>
+          <TableColumn fx:id="quantity" prefWidth="61.60003662109375" style="-fx-background-color: transparent;" text="Qty" />
+          <TableColumn fx:id="product" prefWidth="112.0" style="-fx-background-color: transparent;" text="Product" />
+            <TableColumn fx:id="price" prefWidth="83.20001220703125" style="-fx-background-color: transparent;" text="Price" />
+            <TableColumn fx:id="discount" prefWidth="75.199951171875" style="-fx-background-color: transparent;" text="Discount" />
+            <TableColumn fx:id="amount" prefWidth="90.4000244140625" style="-fx-background-color: transparent;" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

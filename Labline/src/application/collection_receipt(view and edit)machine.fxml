@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CollectionReceiptsController_view">
+    <children>
+      <ImageView fitHeight="880.0" fitWidth="1585.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/System%20GUI%20(1).png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-6.0" prefHeight="56.0" prefWidth="1507.0" style="-fx-background-color: cde9ea;">
+         <children>
+            <ImageView fitHeight="153.0" fitWidth="242.0" layoutX="674.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Labline%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="sidebar" layoutY="50.0" prefHeight="774.0" prefWidth="260.0" style="-fx-background-color: #47919f;">
+         <children>
+            <ImageView fx:id="minbutton" accessibleRole="BUTTON" fitHeight="56.0" fitWidth="68.0" layoutX="196.0" layoutY="5.0" onMouseClicked="#min" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/exit%20side%20bar%20button%20.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="maximizebutton" accessibleRole="BUTTON" fitHeight="93.0" fitWidth="99.0" layoutX="-16.0" layoutY="-14.0" onMouseClicked="#max" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/maximize%20side%20bar%20icon.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="homepane" layoutX="31.0" layoutY="431.0" prefHeight="62.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: 60 0 0 60;">
+               <children>
+                  <Button fx:id="collectionsign" layoutX="70.0" layoutY="3.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: white;" text="Collection  " textAlignment="CENTER" textFill="#b64b4a">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="colloectionicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="7.0" layoutY="9.0" onMouseClicked="#homeic" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+                     <image>
+                        <Image url="@pics/b%20collection_.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="prosign" layoutX="93.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#prod" prefHeight="54.0" prefWidth="158.0" style="-fx-background-color: #47919f;" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="prodicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="263.0" onMouseClicked="#prod" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20products.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="summarixsign" layoutX="95.0" layoutY="528.0" mnemonicParsing="false" onMouseClicked="#sum" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Summarix" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="summarixicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="534.0" onMouseClicked="#sum" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20summarix.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logsign" layoutX="95.0" layoutY="692.0" mnemonicParsing="false" onMouseClicked="#out" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="settingsicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="616.0" onMouseClicked="#openaccount" pickOnBounds="true" preserveRatio="true" x="7.0">
+               <image>
+                  <Image url="@pics/w%20user-gear.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logicon1" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="698.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="settingsb1" layoutX="95.0" layoutY="610.0" mnemonicParsing="false" onMouseClicked="#openaccount" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="homesign" layoutX="95.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#homesi" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="HomePage" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="homeicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="74.0" onMouseClicked="#homeic" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20home%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="accbutton" layoutX="95.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#account1" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Accounts" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="accicon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="169.0" onMouseClicked="#account1" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20folder-minus.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="deliversign" layoutX="95.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#del" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: #47919f;" text="Delivery" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="deliviericon" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="48.0" layoutX="38.0" layoutY="349.0" onMouseClicked="#del" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" x="7.0">
+               <image>
+                  <Image url="@pics/w%20delivery%20.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1463.0" layoutY="16.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="13.0" fitWidth="12.0" layoutX="1436.0" layoutY="16.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/compress-alt%20.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="content" layoutX="457.0" layoutY="62.0" prefHeight="728.0" prefWidth="862.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <Text layoutX="264.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LABLINE ENTERPRISES INC.">
+               <font>
+                  <Font name="Century Gothic Bold" size="27.5" />
+               </font>
+            </Text>
+            <Text layoutX="286.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT Reg. TIN 601-984-998-0000005 Larion Bajo 3500 Tuguegarao City (Capital)Cagayan, Philippines" textAlignment="CENTER" wrappingWidth="289.61346435546875">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="319.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine Collection">
+               <font>
+                  <Font name="Century Gothic Italic" size="23.5" />
+               </font>
+            </Text>
+            <Text layoutX="60.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account:">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <Text layoutX="60.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <Text layoutX="60.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Installed:" wrappingWidth="152.638916015625">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <TextField layoutX="221.0" layoutY="157.0" prefHeight="25.0" prefWidth="285.0" style="-fx-background-color: white;" />
+            <TextField layoutX="221.0" layoutY="185.0" prefHeight="25.0" prefWidth="285.0" style="-fx-background-color: white;" />
+            <Text layoutX="555.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <TextField layoutX="221.0" layoutY="240.0" style="-fx-background-color: white;" />
+            <TextField layoutX="625.0" layoutY="156.0" style="-fx-background-color: white;" />
+            <TextField alignment="CENTER" editable="false" layoutX="680.0" layoutY="108.0" prefHeight="44.0" prefWidth="142.0" promptText="0000" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+            <Text layoutX="60.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine:">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <TextField layoutX="221.0" layoutY="212.0" prefHeight="25.0" prefWidth="285.0" style="-fx-background-color: white;" />
+            <Text layoutX="555.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms:">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <Text layoutX="555.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TCP:" wrappingWidth="48.0">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <Text layoutX="555.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DR Number:">
+               <font>
+                  <Font name="Century Gothic" size="20.5" />
+               </font>
+            </Text>
+            <TextField layoutX="625.0" layoutY="184.0" style="-fx-background-color: white;" />
+            <TextField layoutX="625.0" layoutY="211.0" style="-fx-background-color: white;" />
+            <TextField layoutX="680.0" layoutY="239.0" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: white;" />
+            <Pane layoutX="8.0" layoutY="272.0" prefHeight="348.0" prefWidth="847.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView layoutY="-1.0" prefHeight="350.0" prefWidth="846.0" style="-fx-border-color: white';">
+                     <columns>
+                        <TableColumn prefWidth="150.39999389648438" style="-fx-background-color: cde9ea; -fx-border-color: black;" text="Date of Check" />
+                        <TableColumn prefWidth="163.199951171875" style="-fx-background-color: cde9ea; -fx-border-color: black;" text="Bank" />
+                        <TableColumn prefWidth="175.199951171875" style="-fx-background-color: cde9ea; -fx-border-color: black;" text="Payment Details" />
+                        <TableColumn prefWidth="186.93341064453125" style="-fx-background-color: cde9ea; -fx-border-color: black;" text="Amount" />
+                        <TableColumn prefWidth="167.466552734375" style="-fx-background-color: cde9ea; -fx-border-color: black;" text="Remarks" />
+                        <TableColumn prefWidth="350.39990234375" style="-fx-background-color: cde9ea;" text="Amount" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="665.0" prefHeight="50.0" prefWidth="423.0" style="-fx-background-color: cde9ea; -fx-border-color: black;">
+               <children>
+                  <Text layoutX="15.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Received By:" wrappingWidth="107.1966552734375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="621.0" prefHeight="44.0" prefWidth="499.0" style="-fx-background-color: cde9ea; -fx-border-color: black;">
+               <children>
+                  <Text layoutX="288.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount: " wrappingWidth="107.1966552734375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="431.0" layoutY="665.0" prefHeight="50.0" prefWidth="423.0" style="-fx-background-color: #cde9ea; -fx-border-color: black;">
+               <children>
+                  <Text layoutX="19.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acknowledge By:" wrappingWidth="146.0478515625">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="507.0" layoutY="621.0" prefHeight="44.0" prefWidth="347.0" style="-fx-background-color: #cde9ea; -fx-border-color: black;">
+               <children>
+                  <TextField editable="false" layoutX="48.0" layoutY="4.0" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: cde9ea;" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="12.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #47919f; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="edit1" accessibleRole="BUTTON" fitHeight="25.0" fitWidth="27.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/edit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="52.0" layoutY="12.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #47919f; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="delete" accessibleRole="BUTTON" fitHeight="35.0" fitWidth="27.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/trash.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="91.0" layoutY="12.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #47919f; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="edit" accessibleRole="BUTTON" fitHeight="25.0" fitWidth="27.0" layoutX="5.0" layoutY="5.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/left.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="1338.0" layoutY="62.0" prefHeight="112.0" prefWidth="148.0" style="-fx-background-color: cde9ea; -fx-background-radius: 8; -fx-border-color: gray; -fx-border-radius: 8;">
+         <children>
+            <Button layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#remit" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: white;" text="Remitted" />
+            <Button layoutX="14.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: white;" text="Deposited" />
+            <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="114.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IdeaProjects/UPDATED/src/main/resources/com/example/IdeaProjects/UPDATED/src/main/resources/com/example/IdeaProjects/UPDATED/src/main/resources/com/example/updated/cancel%20button.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="148.0" style="-fx-background-color: #1e8bab; -fx-background-radius: 8; -fx-border-color: gray; -fx-border-radius: 8;" text="STATUS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

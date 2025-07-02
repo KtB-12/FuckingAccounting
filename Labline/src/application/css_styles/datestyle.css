@@ -1,0 +1,12 @@
+.date-picker .text-field {
+    -fx-background-color:  #efecec;
+    -fx-text-fill: #000000; /* or any readable text color */
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #efecec;
+}
+
+.date-picker {
+    -fx-background-color: transparent; /* Optional: removes default border */
+}

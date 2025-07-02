@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="246.0" prefWidth="450.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white; -fx-border-color: teal;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Log_OutController">
+   <children>
+      <Button layoutX="152.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#yes" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #008a8d; -fx-text-fill: white; -fx-background-radius: 30; -fx-font-size: 14; -fx-font-weight: bold; -fx-padding: 5 20 5 20;" text="Log out" />
+      <Button layoutX="152.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#homesi" prefHeight="30.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-text-fill: #B03A2E; -fx-font-size: 18; -fx-font-weight: regular; -fx-background-radius: 30;" text="CANCEL" />
+        <Text fill="#1e8bab" layoutX="66.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to log out?">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+   </children>
+</Pane>
